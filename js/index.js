@@ -10,12 +10,11 @@ $(function(){
 		lineTotalLength = $(".cMLine>svg>polyline").get(0).getTotalLength()
 
 		scrollTop = window.scrollY
-		if(scrollTop>500){
-			strokeLength = scrollTop*3 - lineTop - 340;
+		if(scrollTop > 500){
+			strokeLength = scrollTop*3.5 - lineTop - 585;
 			$(`.cMLine polyline`).css(`stroke-dashoffset`,lineTotalLength - strokeLength);
 			console.log(lineTotalLength-(lineTotalLength - strokeLength) +"만큼그려짐");
 			
 		}
 	});
-	console.log($(".cMLine polyline"));
 });

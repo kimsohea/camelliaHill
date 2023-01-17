@@ -8,17 +8,9 @@
     stroke-linecap: round;
     stroke-dashoffset: 0;
     stroke-dasharray: 5360;
+	animation:trimRect 2.75s ease-in-out forwards;
 }
-.cMLine>svg>polyline {
-	fill:none;
-	stroke:#996D4B;
-	stroke-width:16;
-	stroke-linecap:round;
-	stroke-linejoin:round;
-	stroke-miterlimit:10;
-	stroke-dasharray: 6050;
-    stroke-dashoffset: 6050;
-}
+
 .wrap {
 	overflow: hidden;
 	position: relative;
@@ -43,6 +35,7 @@ div.mainCover {
 	position: relative;
     z-index: 2;
     font-size: 2.5rem;
+	animation: logoScale 1.5s ease-in-out .25s forwards;
 }
 .mCLine {
 	width:100%;
@@ -61,46 +54,68 @@ div.mainCover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 440px;
+	animation: logoBackScale 1.5s ease-in-out forwards;
 }
 .mainCover>figure.lTBranch {
 	top: -3%;
     left: -30px;
     width: 45%;
+	transform-origin: 0% 60%;
+	animation: lTbranch 6s ease-in-out infinite alternate;
 }
 .mainCover>figure.rBBranch {
 	bottom: -16%;
     width: 45%;
     right: -53px;
 	z-index: 2;
+	transform-origin: 100% 20%;
+	animation: rBbranch 8.5s ease-in-out infinite alternate;
 }
 .mainCover>figure.mHBack {
 	left: 0;
     bottom: -6px;
     width: 515px;
+	transform-origin: 0% 100%;
+	animation: mainHill 1.5s ease-in-out forwards;
 }
 .mainCover>figure.mHFront {
 	left: 249px;
     bottom: -6px;
-    width: 499px;}
+    width: 499px;
+	transform-origin: 50% 100%;
+	animation: mainHill 2s ease-in-out forwards;
+}
 .mainCover>figure.rSSTree {
 	left: 11%;
     bottom: 2%;
     width: 3%;
+	transform-origin: 50% 100%;
+	transform: scale(0);
+	animation: mainTree 0.5s ease-in-out 2s forwards ;
 }
 .mainCover>figure.cTree {
     left: 15%;
     bottom: 9%;
     width: 4%;
+	transform-origin: 50% 100%;
+	transform: scale(0);
+	animation: mainTree 0.7s ease-in-out 2.2s forwards;
 }
 .mainCover>figure.lTBTree {
 	left: 7%;
     bottom: 11%;
     width: 6%;
+	transform-origin: 50% 100%;
+	transform: scale(0);
+	animation: mainTree 0.7s ease-in-out 2.4s forwards;
 }
 .mainCover>figure.rBTree {
 	left: 2%;
     bottom: 5%;
     width: 4%;
+	transform-origin: 50% 100%;
+	transform: scale(0);
+	animation: mainTree 1.2s ease-in-out 2.4s forwards;
 }
 
 .content {
@@ -120,14 +135,7 @@ div.mainCover {
     justify-items: center;
     position: relative;
 }
-.cMLine {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -41%);
-	z-index: 2;
-}
+
 .wayToCome {
 	height: 50vh;
 }
