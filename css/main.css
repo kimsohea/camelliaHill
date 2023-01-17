@@ -1,0 +1,182 @@
+/*svg*/
+.mCLine>rect {
+	fill: none;
+    stroke: #94EACE;
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 5360;
+}
+.cMLine>svg>polyline {
+	fill:none;
+	stroke:#996D4B;
+	stroke-width:16;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+	stroke-dasharray: 6050;
+    stroke-dashoffset: 6050;
+}
+.wrap {
+	overflow: hidden;
+	position: relative;
+}
+
+header {
+	position:fixed;
+	top:20px;
+	right:35px;
+	z-index: 3;
+}
+div.mainCover {
+	width:100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#E6FCF3;
+	position: relative;
+}
+.mainCover>h1 {
+	position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+}
+.mCLine {
+	width:100%;
+	height:100%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.mainCover>figure {
+	width:200px;
+	position: absolute;
+}
+.mainCover>figure.logoBack {
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 440px;
+}
+.mainCover>figure.lTBranch {
+	top: -3%;
+    left: -30px;
+    width: 45%;
+}
+.mainCover>figure.rBBranch {
+	bottom: -16%;
+    width: 45%;
+    right: -53px;
+	z-index: 2;
+}
+.mainCover>figure.mHBack {
+	left: 0;
+    bottom: -6px;
+    width: 515px;
+}
+.mainCover>figure.mHFront {
+	left: 249px;
+    bottom: -6px;
+    width: 499px;}
+.mainCover>figure.rSSTree {
+	left: 11%;
+    bottom: 2%;
+    width: 3%;
+}
+.mainCover>figure.cTree {
+    left: 15%;
+    bottom: 9%;
+    width: 4%;
+}
+.mainCover>figure.lTBTree {
+	left: 7%;
+    bottom: 11%;
+    width: 6%;
+}
+.mainCover>figure.rBTree {
+	left: 2%;
+    bottom: 5%;
+    width: 4%;
+}
+
+.content {
+	position: relative;
+	background: linear-gradient(#E6FCF3, #94EACE);
+    padding-top: 10vh;
+}
+.content * {
+	font-size:1.5rem;
+}
+.content>li {
+	width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+.cMLine {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -41%);
+	z-index: 2;
+}
+.wayToCome {
+	height: 50vh;
+}
+.wayToCome>dl {
+	display: grid;
+    justify-items: center;
+}
+.wayToCome>dl>dd>ul {
+	display: grid;
+    width: 60%;
+    margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 30px;
+}
+.information {
+	height: 60vh;
+    margin-top: 3vh;
+}
+.information>dl {
+	display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 30px;
+}
+.information>dl>dt {
+	grid-column: 1 / 3;
+	grid-row:1/2;
+}
+.cafeAndShop>dl {
+	display: grid;
+	justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.cafeAndShop {
+	height: 60vh;
+}
+.cafeAndShop>dl>dt {
+	grid-column: 1 / 3;
+	grid-row:1/2;
+}
+.ourStory {
+    height: 90vh;
+}
+footer {
+	background:#434F4A;
+	color:#D9F9F9;
+}

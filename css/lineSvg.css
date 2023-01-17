@@ -1,0 +1,73 @@
+.content>li>div{
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.content>li>div>figure {
+	top: 0;
+    left: 0;
+    position: absolute;
+    width: 150px;
+	transition:all .5s ease-in-out;
+}
+.content>li.wayToCome>div {
+    height: 55vh;
+}
+.wayToCome .rBTree{
+	top: -21px;
+    left: 33px;
+    width: 3%;
+}
+.wayToCome .rSSTree01{
+	top: 15px;
+    left: 103px;
+    width: 2.5%;
+}
+.wayToCome .sTTree01{
+	top: -42px;
+    left: 159px;
+    width: 5%;
+}
+.wayToCome .lFlower01{
+	top: 42px;
+    left: 275px;
+    transform-origin: 46% 60%;
+    transform: rotate(31deg) scale(1.0);
+    width: 5%;
+}
+.wayToCome .flower01{
+    top: 136px;
+    left: 264px;
+    width: 5%;
+    transform: rotate(12deg) scale(0.7);	
+}
+.wayToCome .flower02{
+	top: 383px;
+    left: 266px;
+    width: 5%;
+    transform: rotate(25deg) scale(0.7);
+}
+.wayToCome .lFlower02{
+	top: 440px;
+    left: 334px;
+    width: 5%;
+    transform: rotate(107deg) scale(1);
+    transform-origin: 43.5% 58.5%;
+}
+.wayToCome .rSSTree{
+    top: 391px;
+    left: 1336px;
+    width: 3%;
+}
+.wayToCome .rNBTree{
+	top: 344px;
+    left: 1404px;
+    width: 3%;
+}
+.wayToCome .sTTree02{
+	top: 357px;
+    left: 1470px;
+    width: 5%;
+}
