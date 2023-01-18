@@ -136,6 +136,7 @@ div.mainCover {
 }
 .content * {
 	font-size:1.35rem;
+	line-height: 1.5;
 }
 .content>li {
 	width: 100%;
@@ -145,8 +146,11 @@ div.mainCover {
     align-items: center;
     justify-items: center;
     position: relative;
+	text-align: center;
 }
-
+.content>li>dl h2 {
+    font-size: 2.5rem;
+}
 .wayToCome {
 	height: 50vh;
 }
@@ -184,6 +188,7 @@ div.mainCover {
     align-items: center;
     justify-content: center;
     align-content: center;
+	grid-template-columns: 1fr 1fr;
 }
 .cafeAndShop {
 	height: 60vh;
@@ -192,13 +197,22 @@ div.mainCover {
 	grid-column: 1 / 3;
 	grid-row:1/2;
 }
+.cafeAndShop>dl>dd {
+	padding:0 20px;
+}
 .ourStory {
     height: 90vh;
 }
 footer {
 	background:#434F4A;
 	color:#D9F9F9;
+	text-align: center;
+	padding:20px 0;
 }
-.cMLine{
-	border:1px solid red;
+footer address {
+	margin-bottom:5px;
+}
+footer a {
+	margin-bottom: 5px;
+	display: block;
 }
