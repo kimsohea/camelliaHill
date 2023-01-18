@@ -117,14 +117,25 @@ div.mainCover {
 	transform: scale(0);
 	animation: mainTree 1.2s ease-in-out 2.4s forwards;
 }
-
+.mainCover>figure.cloud {
+	left: 14%;
+    bottom: 34%;
+    transform-origin: 50% 100%;
+    transform: scale(0);
+    animation: cloud01 4s ease-in-out alternate infinite;
+}
+.mainCover>figure.cloud01 {
+	left: 5%;
+	bottom: 45%;
+	width: 150px;
+}
 .content {
 	position: relative;
 	background: linear-gradient(#E6FCF3, #94EACE);
     padding-top: 10vh;
 }
 .content * {
-	font-size:1.5rem;
+	font-size:1.35rem;
 }
 .content>li {
 	width: 100%;
@@ -187,4 +198,7 @@ div.mainCover {
 footer {
 	background:#434F4A;
 	color:#D9F9F9;
+}
+.cMLine{
+	border:1px solid red;
 }

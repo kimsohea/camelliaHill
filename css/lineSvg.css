@@ -8,7 +8,6 @@
 	stroke-dasharray: 5960;
     stroke-dashoffset: 5960;
 }
-
 .cMLine {
     width: 100%;
     position: absolute;
@@ -17,78 +16,61 @@
     transform: translate(-50%, -41%);
 	z-index: 2;
 }
-.cMLine figure {
-    position: absolute;
-    
+.cMLine figure {position: absolute; transition: all 1s ease-in-out;}
+.cMLine figure.tree {transform: scale(0); transform-origin: 50% 100%;}
+.cMLine figure.tree.line {transform: scale(1);}
+.cTree01 {top: -116px; left: 54px; width: 4%;}
+.cTree02 {top: -132px; left: 130px; width: 4%;}
+.cTree03 {top: -82px; left: 206px; width: 3%;}
+.cTree04 {top: 239px; left: 1215px; width: 5%;}
+.cTree05 {top: 225px; left: 1308px; width: 3%;}
+.cTree06 {top: 274px; left: 1368px; width: 2.5%;}
+.cTree07 {top: 771px; left: 453px; width: 3%;}
+.cTree08 {top: 795px; left: 365px; width: 4.5%;}
+.cTree09 {top: 801px; left: 277px; width: 3.5%;}
+.cTree10 {top: 1406px; left: 1217px; width: 3.5%;}
+.cTree11 {top: 1331px; left: 1268px; width: 3.5%;}
+.cTree12 {top: 1377px; left: 1333px; width: 2.5%;}
+.cTree13 {top: 1339px; left: 1386px; width: 4.5%;}
+.cMLine figure.lflower {width:4%; transform-origin: 39.97% 62.87%;}
+.lflower {transform: rotate(0deg) scale(0);}
+.lflower01 {top: -33px; left: 262px;}
+.lflower02 {top: 313px; left: 359px;}
+.lflower03 {top: 470px; left: 1370px;}
+.lflower04 {top: 769px; left: 1374px;}
+.lflower05 {top: 858px; left: 988px;}
+.lflower06 {top: 1247px; left: 265px;}
+.lflower07 {top: 1406px; left: 268px;}
+.lflower08 {top: 1408px; left: 1048px;}
+.lflower01.line {transform: rotate(374deg) scale(1.2);}
+.lflower02.line {transform: rotate(-173deg) scale(1);}
+.lflower03.line {transform: rotate(64deg) scale(1.2);}
+.lflower04.line {transform: rotate(-115deg) scale(1.4);}
+.lflower05.line {transform: rotate(185deg) scale(1);}
+.lflower06.line {transform: rotate(-85deg) scale(0.7);}
+.lflower07.line {transform: rotate(-166deg) scale(1.3);}
+.lflower08.line {transform: rotate(-65deg) scale(1);}
+.cMLine figure.flower {
+    width:3%;
 }
-.cMLine figure.tree {
-    transform-origin: 50% 100%;
-}
-.cMLine figure.tree.line {
-    transform: scale(1);
-}
-.cTree01 {
-    top: -128px;
-    left: 53px;
-    width: 4%;
-}
-.cTree02 {
-    top: -142px;
-    left: 136px;
-    width: 4%;
-}
-.cTree03 {
-    top: -87px;
-    left: 216px;
-    width: 3%;
-}
-.cTree04 {
-    top: 270px;
-    left: 1261px;
-    width: 4.5%;
-}
-.cTree05 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
-.cTree06 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
-.cTree07 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
-.cTree08 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
-.cTree09 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
-.cTree10 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
-.cTree11 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
-.cTree12 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
-.cTree13 {
-    top:0px;
-    left: 0px;
-    width: 3%;
-}
+.flower {transform: rotate(0deg) scale(0);}
+.flower01 {top: 67px; left: 266px;}
+.flower02 {top: 338px; left: 269px;}
+.flower03 {top: 338px; left: 1154px;}
+.flower04 {top: 562px; left: 1377px;}
+.flower05 {top: 710px; left: 1377px;}
+.flower06 {top: 881px; left: 1299px;}
+.flower07 {top: 884px; left: 1067px;}
+.flower08 {top: 1356px; left: 265px;}
+.flower09 {top: 1431px; left: 362px;}
+.flower10 {top: 1427px; left: 1103px;}
+.flower01.line {transform: rotate(-16deg) scale(1.1);}
+.flower02.line {transform: rotate(-102deg) scale(1.5);}
+.flower03.line {transform: rotate(-44deg) scale(0.7);}
+.flower04.line {transform: rotate(-41deg) scale(0.9);}
+.flower05.line {transform: rotate(-44deg) scale(1.2);}
+.flower06.line {transform: rotate(-48deg) scale(0.7);}
+.flower07.line {transform: rotate(-52deg) scale(1.4);}
+.flower08.line {transform: rotate(-28deg) scale(0.8);}
+.flower09.line {transform: rotate(-28deg) scale(1.8);}
+.flower10.line {transform: rotate(52deg) scale(0.6);}
