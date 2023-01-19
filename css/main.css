@@ -188,10 +188,12 @@ div.mainCover {
     align-items: center;
     justify-content: center;
     align-content: center;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 400px 400px;
+	grid-gap:20px;
 }
 .cafeAndShop {
 	height: 60vh;
+	padding-top: 5vh;
 }
 .cafeAndShop>dl>dt {
 	grid-column: 1 / 3;

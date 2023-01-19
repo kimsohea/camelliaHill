@@ -1,4 +1,4 @@
-.cMLine>svg>polyline {
+.cMLine>svg>polyline.mainLine {
 	fill:none;
 	stroke:#996D4B;
 	stroke-width:16;
