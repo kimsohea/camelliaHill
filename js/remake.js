@@ -1,10 +1,17 @@
 $(function(){
+    $(`.gnb>li>a`).click(function(e){
+		e.preventDefault();
+		let targetHref = $(this).attr(`href`);
+		let posTop = $(targetHref).offset().top;
+		$(`html,body`).stop().animate({scrollTop:posTop},500);
+	});
+
     lineLength = $(`.mainLine`).get(0).getTotalLength();
     winHalf = window.innerHeight/2;
     figure = $(`.cMLine>figure`);
     $(window).scroll(function(){
         scrollTop = window.scrollY;
-        mLine = lineLength + winHalf - (scrollTop*3)
+        mLine = lineLength + winHalf - (scrollTop*2.75)
         $(`.mainLine`).css(`stroke-dashoffset`, mLine);
         // console.log(lineLength-mLine);
         figure.each(function(){
@@ -14,6 +21,12 @@ $(function(){
 				$(this).removeClass(`line`);
 			}
         });
+        if ($(`.bottomSvg`).offset().top*.7 > scrollTop) {
+            $(`.bottomSvg>figure`).removeClass(`scroll`);
+        } else {
+            $(`.bottomSvg>figure`).addClass(`scroll`);
+        }
+
     });
     let figureArray = getArrayFigure('.cMLine');
     let figureArrayCoords = getCoordinate(figureArray);

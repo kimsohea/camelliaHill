@@ -207,7 +207,13 @@ div.mainCover {
 	position: relative;
 }
 .ourStory>p {
-	line-height: 2;
+	line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify;
+    width: 40%;
+}
+#ourStory br {
+    display: none;
 }
 .ourStory .bottomSvg {
 	position: absolute;
@@ -228,7 +234,6 @@ div.mainCover {
     width: 54%;
     line-height: 0;
 	transform-origin: 100% 100%;
-	animation: mainHill 1.5s ease-in-out forwards;
 }
 .bottomSvg .lHill {
 	bottom: 0;
@@ -236,11 +241,16 @@ div.mainCover {
     width: 52%;
     line-height: 0;
 	transform-origin: 0% 100%;
+}
+.bottomSvg .lHill.scroll,.bottomSvg .rHill.scroll {
 	animation: mainHill 1.5s ease-in-out forwards;
 }
 .bottomSvg .dTree {
 	transform-origin: 50% 100%;
 }
+.bottomSvg .dTree.scroll {
+	animation: mainTree 1.25s ease-in-out forwards;
+} 
 .bottomSvg .dTree01 {
 	width: 4%;
     top: 493px;
@@ -269,19 +279,74 @@ div.mainCover {
 .bottomSvg .dTree06 {
 	width: 3.5%;
     top: 684px;
-    left: 909px;
+    left: 880px;
 }
 .bottomSvg .dTree07 {
-	width: 5%;
-	top:200px;
-	left: 200px;
+	width: 4.5%;
+    top: 643px;
+    left: 1156px;
 }
 .bottomSvg .dTree08 {
-	width: 5%;
-	top:200px;
-	left: 200px;
+	width: 5.5%;
+    top: 467px;
+    left: 1388px;
+}
+.bottomSvg .dTree09{
+	width: 4.5%;
+    top: 569px;
+    left: 1294px;
+}
+.bottomSvg .dTree10{
+	width: 7.5%;
+    top: 544px;
+    left: 1571px;
+}
+.bottomSvg .dTree11{
+	width: 4%;
+    top: 633px;
+    left: 1016px;
+}
+.bottomSvg .dTree12{
+    width: 2.5%;
+    top: 684px;
+    left: 571px;
+}
+.dFlower {
+	transform: scale(0) rotate(0deg);
+	line-height: 0;
+	transition: all 1.25s ease-in-out;
+}
+.bottomSvg .dFlower01{
+	top: 301px;
+    left: 122px;
+}
+.bottomSvg .dFlower02{
+	top: 241px;
+    left: 265px;
+}
+.bottomSvg .dFlower03{
+	top: 232px;
+    left: 539px;
+}
+.bottomSvg .dFlower04{
+	top: 157px;
+    left: 631px;
+}
+.bottomSvg .dFlower05{
+	top: 277px;
+    left: 1438px;
+}
+.bottomSvg .dFlower06{
+	top: 369px;
+    left: 1582px;
 }
 
+.bottomSvg .dFlower01.scroll {width: 2.5%; transform: scale(1) rotate(45deg);}
+.bottomSvg .dFlower02.scroll {width: 2.5%; transform: scale(1.2) rotate(170deg);}
+.bottomSvg .dFlower03.scroll {width: 2.5%; transform: scale(.7) rotate(130deg);}
+.bottomSvg .dFlower04.scroll {width: 2.5%; transform: scale(1.3) rotate(114deg);}
+.bottomSvg .dFlower05.scroll {width: 2.5%; transform: scale(.8) rotate(-61deg);}
+.bottomSvg .dFlower06.scroll {width: 2.5%; transform: scale(1.6) rotate(45deg);}
 footer {
 	background:#434F4A;
 	color:#D9F9F9;
