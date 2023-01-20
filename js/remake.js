@@ -5,7 +5,10 @@ $(function(){
 		let posTop = $(targetHref).offset().top;
 		$(`html,body`).stop().animate({scrollTop:posTop},500);
 	});
-
+    $(`.toggleBar`).click(function(){
+        $(this).toggleClass(`active`);
+        $(this).next().toggleClass(`active`);
+    });
     lineLength = $(`.mainLine`).get(0).getTotalLength();
     winHalf = window.innerHeight/2;
     figure = $(`.cMLine>figure`);
