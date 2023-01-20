@@ -14,7 +14,7 @@
 .wrap {
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 126px;
+	padding-bottom: 140px;
 }
 
 header {
@@ -136,8 +136,8 @@ div.mainCover {
     padding-top: 10vh;
 }
 .content * {
-	font-size:1.35rem;
-	line-height: 1.5;
+	font-size:1.25rem;
+	line-height: 1.4;
 }
 .content>li {
 	width: 100%;
@@ -147,10 +147,12 @@ div.mainCover {
     align-items: center;
     justify-items: center;
     position: relative;
-	text-align: center;
 }
 .content>li h2 {
     font-size: 2.5rem;
+}
+.content>li h3 {
+	font-size: 1.5rem;
 }
 .wayToCome {
     height: 65vh;
@@ -161,14 +163,24 @@ div.mainCover {
 }
 .wayToCome>dl>dd>ul {
 	display: grid;
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-gap: 30px;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 30px;
+}
+.wayBus dd {
+	margin-bottom:10px;
+}
+.wayCar {
+	display: grid;
+	align-content: center;
+}
+.wayCar ul li {
+	margin-bottom:10px;
 }
 .information {
 	height: 60vh;
+	text-align: center;
 }
 .information>dl {
 	display: grid;
@@ -177,10 +189,33 @@ div.mainCover {
     justify-content: center;
     align-content: center;
     grid-gap: 30px;
+    grid-template-columns: 280px 500px;
 }
 .information>dl>dt {
 	grid-column: 1 / 3;
 	grid-row:1/2;
+}
+.viewingTime dd{
+	margin-bottom: 10px;
+}
+.tariff span {
+	font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+	font-size: .5rem;
+    color:#434F4A;
+    word-break: keep-all;
+}
+.tariff tr {
+	height:35px;
+}
+.tariff tr:first-of-type {
+	height:40px;
+}
+.cell01 {
+	width: 200px;
+}
+.cell02, .cell03 {
+	width: 140px;
 }
 .cafeAndShop>dl {
 	display: grid;
@@ -188,7 +223,7 @@ div.mainCover {
     align-items: center;
     justify-content: center;
     align-content: center;
-	grid-template-columns: 400px 400px;
+    grid-template-columns: 430px 300px;
 	grid-gap:20px;
 }
 .cafeAndShop {
@@ -201,6 +236,13 @@ div.mainCover {
 }
 .cafeAndShop>dl>dd {
 	padding:0 20px;
+}
+.cafeAndShop li {
+	margin-bottom: 10px;
+}
+.cafe b {
+	font-weight: 500;
+	text-transform: uppercase;
 }
 .ourStory {
     height: 95vh;
@@ -351,7 +393,7 @@ footer {
 	background:#434F4A;
 	color:#D9F9F9;
 	text-align: center;
-	padding:20px 0;
+	padding:25px 0;
 	z-index: -1;
 	position: fixed;
 	width: 100%;
