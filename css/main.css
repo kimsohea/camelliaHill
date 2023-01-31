@@ -27,11 +27,11 @@ header {
 	text-align: right;
 	position: absolute;
 	top: 65px;
-	right:-300px;
+	transform: translateX(300px);
 	transition:all .5s ease-in-out;
 }
 .gnb.active {
-	right: 0px;
+	transform: translateX(-85px);
 }
 .gnb>li {
 	font-size:1.5rem;
