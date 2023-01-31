@@ -55,7 +55,54 @@
         top: 53vh;
         left: 78.3vw;
     }
-
+    .flower04 {
+        top: 68vh;
+        left: 78.6vw;
+    }
+    .flower05 {
+        top: 93vh;
+        left: 78.6vw;
+    }
+    .lflower04 {
+        top: 103vh;
+        left: 78.7vw;
+    }
+    .flower06 {
+        top: 106vh;
+        left: 69vw;
+    }
+    .flower07 {
+        top: 106vh;
+        left: 50vw;
+    }
+    .lflower05 {
+        top: 103vh;
+        left: 45vw;
+    }
+    .cTree07 {
+        top: 92vh;
+        left: 24vw;
+    }
+    .cTree08 {
+        top: 95vh;
+        left: 19vw;
+    }
+    .cTree09 {
+        top: 96vh;
+        left: 15vw;
+    }
+    .lflower06 {
+        top: 129vh;
+        left: 15.2vw;
+    }
+    .flower08 {
+        top: 140vh;
+        left: 15.2vw;
+    }
+    .lflower07 {
+        top: 168.7vh;
+        left: 15.3vw;
+    }
 
     .information {
         margin-top:11.5vh;
