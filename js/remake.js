@@ -17,11 +17,11 @@ $(function(){
     $(window).scroll(function(){
         scrollTop = window.scrollY;
         mLine = lineLength + winHalf - (scrollTop*2.75)
-        if (windowInnerheight<740) {
+        if (windowInnerheight<815) {
             mLine = (mLine*1.25)
         }
         $(`.mainLine`).css(`stroke-dashoffset`, mLine);
-        if (windowInnerheight<740) {
+        if (windowInnerheight<815) {
             figure.each(function(){
                 if(dasArrayBase[$(this).index()] < (lineLength-winHalf-mLine)){
                     $(this).addClass(`line`);
