@@ -1,4 +1,6 @@
+let windowInnerheight = window.innerHeight;
 $(function(){
+    console.log(windowInnerheight);
     $(`.gnb>li>a`).click(function(e){
 		e.preventDefault();
 		let targetHref = $(this).attr(`href`);
@@ -15,24 +17,38 @@ $(function(){
     $(window).scroll(function(){
         scrollTop = window.scrollY;
         mLine = lineLength + winHalf - (scrollTop*2.75)
+        if (windowInnerheight<732) {
+            mLine = (mLine*1.25)
+        }
         $(`.mainLine`).css(`stroke-dashoffset`, mLine);
-        // console.log(lineLength-mLine);
-        figure.each(function(){
-            if(dasArrayBase[$(this).index()] < (lineLength-mLine)){
-                $(this).addClass(`line`);
-			} else {
-				$(this).removeClass(`line`);
-			}
-        });
+        if (windowInnerheight<732) {
+            figure.each(function(){
+                if(dasArrayBase[$(this).index()] < (lineLength-winHalf-mLine)){
+                    $(this).addClass(`line`);
+                } else {
+                    $(this).removeClass(`line`);
+                }
+            });
+        } else {
+            figure.each(function(){
+                if(dasArrayBase[$(this).index()] < (lineLength-mLine)){
+                    $(this).addClass(`line`);
+                } else {
+                    $(this).removeClass(`line`);
+                }
+            });
+        }
         if ($(`.bottomSvg`).offset().top*.7 > scrollTop) {
             $(`.bottomSvg>figure`).removeClass(`scroll`);
         } else {
             $(`.bottomSvg>figure`).addClass(`scroll`);
         }
-
+        
     });
     let figureArray = getArrayFigure('.cMLine');
     let figureArrayCoords = getCoordinate(figureArray);
     let disArray = getDistanaceArray(figureArrayCoords);
     let dasArrayBase = getDistanceBase(disArray);
+    console.log(dasArrayBase);
+
 });

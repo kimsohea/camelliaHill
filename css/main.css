@@ -446,7 +446,29 @@ div.mainCover {
 	top: 369px;
     left: 1582px;
 }
-
+.bottomSvg .dCloud {
+	width:200px;
+	height: 127px;
+    animation: cloud01 4s ease-in-out alternate infinite;
+}
+.bottomSvg .dCloud01 {
+	top: 9vh;
+    left: 10vw;
+    width: 150px;
+}
+.bottomSvg .dCloud02 {
+	top: 13vh;
+    left: 21vw;
+}
+.bottomSvg .dCloud03 {
+	top: 16vh;
+    left: 61vw;
+}
+.bottomSvg .dCloud04 {
+	top: 31vh;
+    left: 76vw;
+    width: 180px;
+}
 .bottomSvg .dFlower01.scroll {width: 2.5%; transform: scale(1) rotate(45deg);}
 .bottomSvg .dFlower02.scroll {width: 2.5%; transform: scale(1.2) rotate(170deg);}
 .bottomSvg .dFlower03.scroll {width: 2.5%; transform: scale(.7) rotate(130deg);}
