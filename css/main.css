@@ -15,6 +15,7 @@
 	overflow: hidden;
 	position: relative;
 	padding-bottom: 140px;
+	min-width: 1903px;
 }
 
 header {
@@ -214,7 +215,7 @@ div.mainCover {
 	font-size: 1.5rem;
 }
 .wayToCome {
-    height: 65vh;
+    height: 635px;
 }
 .wayToCome>dl {
 	display: grid;
@@ -238,7 +239,7 @@ div.mainCover {
 	margin-bottom:10px;
 }
 .information {
-	height: 60vh;
+	height:620px;
 	text-align: center;
 }
 .information>dl {
@@ -286,7 +287,7 @@ div.mainCover {
 	grid-gap:20px;
 }
 .cafeAndShop {
-	height: 60vh;
+	height: 490px;
 	padding-top: 5vh;
 }
 .cafeAndShop>dl>dt {
@@ -308,7 +309,7 @@ div.mainCover {
 	text-transform: uppercase;
 }
 .ourStory {
-    height: 95vh;
+    height: 910px;
 	position: relative;
 }
 .ourStory>p {
@@ -359,63 +360,63 @@ div.mainCover {
 } 
 .bottomSvg .dTree01 {
 	width: 4%;
-    top: 493px;
-    left: 40px;
+    top: 557px;
+    left: 71px;
 }
 .bottomSvg .dTree02 {
 	width: 9%;
-    top: 365px;
-    left: 171px;
+    top: 405px;
+    left: 209px;
 }
 .bottomSvg .dTree03 {
 	width: 3.5%;
-    top: 598px;
-    left: 466px;
+	top: 598px;
+    left: 524px;
 }
 .bottomSvg .dTree04 {
 	width: 5.5%;
-    top: 605px;
-    left: 322px;
+	top: 644px;
+    left: 375px;
 }
 .bottomSvg .dTree05 {
 	width: 5%;
-    top: 611px;
-    left: 122px;
+    top: 670px;
+    left: 212px;
 }
 .bottomSvg .dTree06 {
 	width: 3.5%;
-    top: 684px;
-    left: 880px;
+    top: 733px;
+    left: 921px;
 }
 .bottomSvg .dTree07 {
 	width: 4.5%;
-    top: 643px;
-    left: 1156px;
+    top: 723px;
+    left: 1206px;
 }
 .bottomSvg .dTree08 {
 	width: 5.5%;
-    top: 467px;
-    left: 1388px;
+    top: 519px;
+    left: 1509px;
 }
 .bottomSvg .dTree09{
 	width: 4.5%;
-    top: 569px;
-    left: 1294px;
+    top: 660px;
+    left: 1398px;
 }
 .bottomSvg .dTree10{
 	width: 7.5%;
-    top: 544px;
-    left: 1571px;
+	top: 563px;
+    left: 1691px;
 }
 .bottomSvg .dTree11{
 	width: 4%;
-    top: 633px;
-    left: 1016px;
+    top: 653px;
+    left: 1056px;
 }
 .bottomSvg .dTree12{
     width: 2.5%;
     top: 684px;
-    left: 571px;
+    left: 668px;
 }
 .dFlower {
 	transform: scale(0) rotate(0deg);
@@ -423,28 +424,28 @@ div.mainCover {
 	transition: all 1.25s ease-in-out;
 }
 .bottomSvg .dFlower01{
-	top: 301px;
-    left: 122px;
+	top: 262px;
+    left: 89px;
 }
 .bottomSvg .dFlower02{
-	top: 241px;
-    left: 265px;
+	top: 343px;
+    left: 179px;
 }
 .bottomSvg .dFlower03{
-	top: 232px;
-    left: 539px;
+	top: 293px;
+    left: 671px;
 }
 .bottomSvg .dFlower04{
-	top: 157px;
-    left: 631px;
+	top: 214px;
+    left: 781px;
 }
 .bottomSvg .dFlower05{
 	top: 277px;
-    left: 1438px;
+    left: 1412px;
 }
 .bottomSvg .dFlower06{
-	top: 369px;
-    left: 1582px;
+	top: 406px;
+    left: 1695px;
 }
 .bottomSvg .dCloud {
 	width:200px;
@@ -452,21 +453,21 @@ div.mainCover {
     animation: cloud01 4s ease-in-out alternate infinite;
 }
 .bottomSvg .dCloud01 {
-	top: 9vh;
-    left: 10vw;
+	top: 197px;
+    left: 225px;
     width: 150px;
 }
 .bottomSvg .dCloud02 {
-	top: 13vh;
-    left: 21vw;
+	top: 253px;
+    left: 425px;
 }
 .bottomSvg .dCloud03 {
-	top: 16vh;
-    left: 61vw;
+	top: 210px;
+    left: 1135px;
 }
 .bottomSvg .dCloud04 {
-	top: 31vh;
-    left: 76vw;
+	top: 350px;
+    left: 1400px;
     width: 180px;
 }
 .bottomSvg .dFlower01.scroll {width: 2.5%; transform: scale(1) rotate(45deg);}
